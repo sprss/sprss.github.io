@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css"> 
+	
+
+
+body { background-color: black; 
+	   }	
+	
+
+ 
+.menut {
+	position:fixed;
+	top:30px;
+	left:5px;
+	float: left;
+	opacity:0.2;
+	-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: linear;
+	z-index: 2;
+}
+ 
+ul.menu {
+	list-style: none;
+	display: block;
+	width: 200px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 0px 0 60px 0;
+	background: no-repeat;
+	-webkit-background-size: 50% 100%;
+}
+ 
+li {
+	margin: 5px 0 0 0;
+}
+ 
+ul.menu li a {
+	-webkit-transition: all 0.5s ease-out;
+	background: #cbcbcb no-repeat;
+	color: #174867;
+	padding: 6px 12px 6px 12px;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+}
+ 
+ul.menu li a:hover {
+	background: #ebebeb no-repeat;
+	color: #67a5cd;
+	padding: 6px 12px 6px 20px;
+}
+ 
+.menut:hover {
+opacity:1;
+}
+
+
+
+#ape img {
+opacity: 0;
+-webkit-transition: opacity 1s ease-in-out;
+transition: opacity 1s ease-in-out;
+-webkit-transform: scale(2.7);
+transform: scale(2.7);
+
+
+
+}
+
+#ape:hover img,
+#ape:focus img {
+opacity:1;
+
+
+}
+
+#ape_position
+{
+float: right;
+
+bottom: auto;
+right: auto;
+margin: 250px 360px 0 0;
+list-style: none;
+}
+
+
+
+
+
+
+
+
+#bird img {
+
+-webkit-transform:rotate3d(70,30,-20,50deg);
+-webkit-box-shadow:0 3px 10px #888;
+-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.7);
+-webkit-transition-delay: 0.10s;
+
+
+}
+
+#bird:hover img,
+#bird:focus img {
+opacity:1;
+-webkit-transform: rotateY(0deg); -webkit-transform: scale(0.8);
+
+}
+
+#bird_position
+{
+float: right;
+
+bottom: auto;
+right: auto;
+margin: 250px 360px 0 0;
+list-style: none;
+}
+
+
+
+
+
+
+
+
+#teksti0{
+
+-webkit-transform:rotate3d(-20,30,-5,20deg); /* Safari and Chrome */
+margin: 3% 0 0 3%;
+}
+
+
+
+#teksti1{
+
+-webkit-transform:rotate3d(70,30,-20,50deg);
+margin: 250px 0 0 350px;
+}
+
+#teksti2{
+
+-webkit-transform:rotate3d(20,20,-30,30deg);
+}
+
+
+#teksti3{
+
+-webkit-transform:rotate3d(-20,30,-5,20deg); /* Safari and Chrome */
+margin:650px 360px 0 400px;
+}
+
+
+#teksti4{
+
+-webkit-transform:rotate3d(70,30,-20,50deg);
+}
+
+
+
+ 
+
+	
+#a1 {
+  width: 100%;
+  background: black 0 0 no-repeat fixed;
+  margin: 0;
+  height: 1200px;
+  overflow: hidden;
+  color:white;
+  opacity:0;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 2.4s ease-in-out;
+}
+#a1:hover {
+	opacity:1;
+}
+
+
+#a2 {
+  width: 100%;
+  background: black 0 0 no-repeat fixed;
+  margin: 0;
+  height: 1200px;
+  overflow: hidden;
+  color:white;
+  opacity:0;
+ -webkit-transition: opacity 0.4s ease-in-out;
+ transition: opacity 0.4s ease-in-out;
+
+}
+
+
+#a2:hover {
+	opacity:1;
+}
+
+
+
+	
+
+#silmat {
+-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.7);
+-webkit-transition-delay: 0.70s;
+	
+}
+
+#silmat:hover {
+	-webkit-transform:translateY(50px);
+	
+}
+
+
+
+#silmat1 {
+-webkit-transition-property: transform; -webkit-transition-duration: 5.5s; -webkit-transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.7);
+-webkit-transition-delay: 0.10s;
+	
+}
+
+#silmat1:hover {
+	-webkit-transform:skew(10deg, 30deg);
+	
+}
+
+#silmat3 {
+-webkit-transition-property: transform; -webkit-transition-duration: 5.5s; -webkit-transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.7);
+-webkit-transition-delay: 0.10s;
+	
+}
+
+#silmat3:hover {
+	-webkit-transform:rotate(12deg);
+	
+}
+
+
+
+
+	
+</style>
+</head>
+<body>
+	
+
+
+<div class="menut"> 
+<ul class="menu"> 
+<li><a href="#page1">Page 1</a></li> 
+<li><a href="#page2">Page 2</a></li> 
+<li><a href="#page3">Page 3</a></li> 
+</ul> 
+</div> 
+
+<section id="a1">	
+
+
+
+<div id="ape_position"> 
+<ul id="ape" style="list-style: none">
+<li><a href="#"><img src="images/apina.png"/> </a>
+</li>
+</ul>
+</div>
+	
+<article id="teksti0"> <h2>There is something that only</h2>
+	         <h1> The Ape knew </h1>
+	</article>	
+	
+
+
+
+</section>
+
+
+
+
+
+<a name="page1">
+<section id="a2">
+	
+	
+	
+	<article id="teksti1"> <h2>When one does good, the other kicks ass</h2>
+	         <h1> with pride?</h1>
+	</article>
+	
+	<div id="bird_position"> 
+<ul id="bird" style="list-style: none">
+<li><a href="#page1"><img src="images/linnut.png"/> </a>
+</li>
+</ul>
+</div>
+	
+</section>
+</a>
+
+
+
+<a name="page2">
+<section id="a2">
+	
+	
+
+	<article id="teksti2" style="">	  
+		   	
+	         <h1>When she's hungry</h1>
+	         <h2>and you know it</h2> 
+	         
+	</article>
+	
+	
+	
+	<div id="silmat">
+	<a href="#page2"><img style="float: right;margin: 250px 360px 0 0;" src="images/silmat2.png" 
+alt="eyes" /></a>
+	</div>
+
+	<div id="silmat1">
+	<a href="#page2"><img style="float: right;margin: 250px 360px 0 0;" src="images/silmat1.png" 
+alt="eyes" /></a>
+</div>
+	
+	<div id="silmat3">
+	<a href="#page2"><img style="margin: 5px 10px 50px 40px;-webkit-transform:scale(0.3);" src="images/silmat3.png" 
+alt="eyes" /></a>
+</div>
+	
+	<article id="teksti3">	  
+		   	
+	         <h1 style="float:right">You arrive to somewhere</h1>
+	         
+	</article>
+	
+	
+	 
+	
+</section>
+</a>
+	 
+<a name="page3">	 
+<section id="a2">	
+	
+	<article id="teksti4">	  
+		   	
+	         <h1>Welcome to Bottomend!</h1>
+	         <h2>somebody used to live here with the ape</h2>
+	         
+	</article>
+	
+	
+	<article  style="margin:30% 15% 0 20%";>
+<h1 style:"fontsize:44px; float:bottom;">
+	Ape knew that she could trick you to come here. It was the ape, who kicked your ass with such a pride. It was the ape, who was hungry for love.
+	Ape has been lonely here, it's just a plain dark place for such a colorful person. The law of Bottomend is that by reading this sentence, you get officially married to the ape. The wedding night is always the next night, 
+	in your dreams, where the ape can come freely. What wouldn't an ape do for some love, baby?
+	
+</h1>
+	</article>
+	
+</section>	
+</a>
+
+</body>
+</html>
+
