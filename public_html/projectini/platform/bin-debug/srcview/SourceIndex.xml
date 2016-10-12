@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>Source of platform</title>
+	<nodes>
+		<node label="assets">
+			<node icon="imageIcon" label="background.png" url="source/assets/background.png.html"/>
+			<node label="click1.mp3" url="source/assets/click1.mp3"/>
+			<node label="Concerto.mp3" url="source/assets/Concerto.mp3"/>
+			<node label="errror1.mp3" url="source/assets/errror1.mp3"/>
+			<node label="hurt.mp3" url="source/assets/hurt.mp3"/>
+			<node label="hurt.wav" url="source/assets/hurt.wav"/>
+			<node label="jump.mp3" url="source/assets/jump.mp3"/>
+			<node label="jump.wav" url="source/assets/jump.wav"/>
+			<node label="jump2.mp3" url="source/assets/jump2.mp3"/>
+			<node label="jump2.wav" url="source/assets/jump2.wav"/>
+			<node label="jumping1.mp3" url="source/assets/jumping1.mp3"/>
+			<node icon="imageIcon" label="particle.png" url="source/assets/particle.png.html"/>
+			<node icon="imageIcon" label="player.png" url="source/assets/player.png.html"/>
+			<node icon="imageIcon" label="player2.png" url="source/assets/player2.png.html"/>
+			<node label="powerup1.mp3" url="source/assets/powerup1.mp3"/>
+			<node label="psychic1.mp3" url="source/assets/psychic1.mp3"/>
+			<node icon="imageIcon" label="sprite_trees_real.png" url="source/assets/sprite_trees_real.png.html"/>
+			<node icon="imageIcon" label="swordguy.png" url="source/assets/swordguy.png.html"/>
+			<node label="teleport.mp3" url="source/assets/teleport.mp3"/>
+			<node label="teleport.wav" url="source/assets/teleport.wav"/>
+			<node icon="imageIcon" label="tiles.png" url="source/assets/tiles.png.html"/>
+			<node icon="imageIcon" label="tiles2.png" url="source/assets/tiles2.png.html"/>
+		</node>
+		<node label="html-template">
+			<node label="history">
+				<node icon="cssIcon" label="history.css" url="source/html-template/history/history.css.html"/>
+				<node label="history.js" url="source/html-template/history/history.js.txt"/>
+				<node icon="htmlIcon" label="historyFrame.html" url="source/html-template/history/historyFrame.html"/>
+			</node>
+			<node icon="htmlIcon" label="index.template.html" url="source/html-template/index.template.html"/>
+			<node icon="swfIcon" label="playerProductInstall.swf" url="source/html-template/playerProductInstall.swf"/>
+			<node label="swfobject.js" url="source/html-template/swfobject.js.txt"/>
+		</node>
+		<node label="src">
+			<node icon="packageIcon" label="entities" expanded="true">
+				<node icon="actionScriptIcon" label="Ball.as" url="source/entities/Ball.as.html"/>
+				<node icon="actionScriptIcon" label="Bullets.as" url="source/entities/Bullets.as.html"/>
+				<node icon="actionScriptIcon" label="Player.as" url="source/entities/Player.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk" expanded="true">
+				<node icon="actionScriptIcon" label="Engine.as" url="source/net/flashpunk/Engine.as.html"/>
+				<node icon="actionScriptIcon" label="Entity.as" url="source/net/flashpunk/Entity.as.html"/>
+				<node icon="actionScriptIcon" label="FP.as" url="source/net/flashpunk/FP.as.html"/>
+				<node icon="actionScriptIcon" label="Graphic.as" url="source/net/flashpunk/Graphic.as.html"/>
+				<node icon="actionScriptIcon" label="Mask.as" url="source/net/flashpunk/Mask.as.html"/>
+				<node icon="actionScriptIcon" label="Screen.as" url="source/net/flashpunk/Screen.as.html"/>
+				<node icon="actionScriptIcon" label="Sfx.as" url="source/net/flashpunk/Sfx.as.html"/>
+				<node icon="actionScriptIcon" label="Tween.as" url="source/net/flashpunk/Tween.as.html"/>
+				<node icon="actionScriptIcon" label="Tweener.as" url="source/net/flashpunk/Tweener.as.html"/>
+				<node icon="actionScriptIcon" label="World.as" url="source/net/flashpunk/World.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.debug" expanded="true">
+				<node icon="actionScriptIcon" label="Console.as" url="source/net/flashpunk/debug/Console.as.html"/>
+				<node icon="imageIcon" label="console_debug.png" url="source/net/flashpunk/debug/console_debug.png.html"/>
+				<node icon="imageIcon" label="console_logo.png" url="source/net/flashpunk/debug/console_logo.png.html"/>
+				<node icon="imageIcon" label="console_output.png" url="source/net/flashpunk/debug/console_output.png.html"/>
+				<node icon="imageIcon" label="console_pause.png" url="source/net/flashpunk/debug/console_pause.png.html"/>
+				<node icon="imageIcon" label="console_play.png" url="source/net/flashpunk/debug/console_play.png.html"/>
+				<node icon="imageIcon" label="console_step.png" url="source/net/flashpunk/debug/console_step.png.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.graphics" expanded="true">
+				<node label="04B_03__.TTF" url="source/net/flashpunk/graphics/04B_03__.TTF"/>
+				<node icon="actionScriptIcon" label="Anim.as" url="source/net/flashpunk/graphics/Anim.as.html"/>
+				<node icon="actionScriptIcon" label="Backdrop.as" url="source/net/flashpunk/graphics/Backdrop.as.html"/>
+				<node icon="actionScriptIcon" label="Canvas.as" url="source/net/flashpunk/graphics/Canvas.as.html"/>
+				<node icon="actionScriptIcon" label="Emitter.as" url="source/net/flashpunk/graphics/Emitter.as.html"/>
+				<node icon="actionScriptIcon" label="Graphiclist.as" url="source/net/flashpunk/graphics/Graphiclist.as.html"/>
+				<node icon="actionScriptIcon" label="Image.as" url="source/net/flashpunk/graphics/Image.as.html"/>
+				<node icon="actionScriptIcon" label="Particle.as" url="source/net/flashpunk/graphics/Particle.as.html"/>
+				<node icon="actionScriptIcon" label="ParticleType.as" url="source/net/flashpunk/graphics/ParticleType.as.html"/>
+				<node icon="actionScriptIcon" label="PreRotation.as" url="source/net/flashpunk/graphics/PreRotation.as.html"/>
+				<node icon="actionScriptIcon" label="Spritemap.as" url="source/net/flashpunk/graphics/Spritemap.as.html"/>
+				<node icon="actionScriptIcon" label="Stamp.as" url="source/net/flashpunk/graphics/Stamp.as.html"/>
+				<node icon="actionScriptIcon" label="Text.as" url="source/net/flashpunk/graphics/Text.as.html"/>
+				<node icon="actionScriptIcon" label="TiledImage.as" url="source/net/flashpunk/graphics/TiledImage.as.html"/>
+				<node icon="actionScriptIcon" label="TiledSpritemap.as" url="source/net/flashpunk/graphics/TiledSpritemap.as.html"/>
+				<node icon="actionScriptIcon" label="Tilemap.as" url="source/net/flashpunk/graphics/Tilemap.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.masks" expanded="true">
+				<node icon="actionScriptIcon" label="Grid.as" url="source/net/flashpunk/masks/Grid.as.html"/>
+				<node icon="actionScriptIcon" label="Hitbox.as" url="source/net/flashpunk/masks/Hitbox.as.html"/>
+				<node icon="actionScriptIcon" label="Masklist.as" url="source/net/flashpunk/masks/Masklist.as.html"/>
+				<node icon="actionScriptIcon" label="Pixelmask.as" url="source/net/flashpunk/masks/Pixelmask.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.tweens.misc" expanded="true">
+				<node icon="actionScriptIcon" label="Alarm.as" url="source/net/flashpunk/tweens/misc/Alarm.as.html"/>
+				<node icon="actionScriptIcon" label="AngleTween.as" url="source/net/flashpunk/tweens/misc/AngleTween.as.html"/>
+				<node icon="actionScriptIcon" label="ColorTween.as" url="source/net/flashpunk/tweens/misc/ColorTween.as.html"/>
+				<node icon="actionScriptIcon" label="MultiVarTween.as" url="source/net/flashpunk/tweens/misc/MultiVarTween.as.html"/>
+				<node icon="actionScriptIcon" label="NumTween.as" url="source/net/flashpunk/tweens/misc/NumTween.as.html"/>
+				<node icon="actionScriptIcon" label="VarTween.as" url="source/net/flashpunk/tweens/misc/VarTween.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.tweens.motion" expanded="true">
+				<node icon="actionScriptIcon" label="CircularMotion.as" url="source/net/flashpunk/tweens/motion/CircularMotion.as.html"/>
+				<node icon="actionScriptIcon" label="CubicMotion.as" url="source/net/flashpunk/tweens/motion/CubicMotion.as.html"/>
+				<node icon="actionScriptIcon" label="LinearMotion.as" url="source/net/flashpunk/tweens/motion/LinearMotion.as.html"/>
+				<node icon="actionScriptIcon" label="LinearPath.as" url="source/net/flashpunk/tweens/motion/LinearPath.as.html"/>
+				<node icon="actionScriptIcon" label="Motion.as" url="source/net/flashpunk/tweens/motion/Motion.as.html"/>
+				<node icon="actionScriptIcon" label="QuadMotion.as" url="source/net/flashpunk/tweens/motion/QuadMotion.as.html"/>
+				<node icon="actionScriptIcon" label="QuadPath.as" url="source/net/flashpunk/tweens/motion/QuadPath.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.tweens.sound" expanded="true">
+				<node icon="actionScriptIcon" label="Fader.as" url="source/net/flashpunk/tweens/sound/Fader.as.html"/>
+				<node icon="actionScriptIcon" label="SfxFader.as" url="source/net/flashpunk/tweens/sound/SfxFader.as.html"/>
+			</node>
+			<node icon="packageIcon" label="net.flashpunk.utils" expanded="true">
+				<node icon="actionScriptIcon" label="Data.as" url="source/net/flashpunk/utils/Data.as.html"/>
+				<node icon="actionScriptIcon" label="Draw.as" url="source/net/flashpunk/utils/Draw.as.html"/>
+				<node icon="actionScriptIcon" label="Ease.as" url="source/net/flashpunk/utils/Ease.as.html"/>
+				<node icon="actionScriptIcon" label="Input.as" url="source/net/flashpunk/utils/Input.as.html"/>
+				<node icon="actionScriptIcon" label="Key.as" url="source/net/flashpunk/utils/Key.as.html"/>
+			</node>
+			<node icon="packageIcon" label="worlds" expanded="true">
+				<node icon="actionScriptIcon" label="GameWorld.as" url="source/worlds/GameWorld.as.html"/>
+				<node icon="actionScriptIcon" label="Level.as" url="source/worlds/Level.as.html"/>
+				<node icon="actionScriptIcon" label="MainMenuWorld.as" url="source/worlds/MainMenuWorld.as.html"/>
+			</node>
+			<node icon="mxmlAppIcon" selected="true" label="platform.as" url="source/platform.as.html"/>
+		</node>
+	</nodes>
+	<zipfile label="Download source (ZIP, 12749K)" url="platform.zip">
+	</zipfile>
+	<sdklink label="Download Flex SDK" url="http://www.adobe.com/go/flex451_sdk_download">
+	</sdklink>
+</index>

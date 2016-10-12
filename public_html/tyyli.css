@@ -1,0 +1,450 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*tämä css3 koodi täällä heittää herjaa css-validatorissa (joka testaa css  2.1stä), joten
+ei saa välittää siitä herjasta siis. Kaikki sivuston ominaisuudet toimii uusimmissa firefox ja chrome selaimissa.*/
+#background {
+        background: url(background.jpg) no-repeat center center;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+
+
+
+        -webkit-animation-name: move,fade;
+        -webkit-animation-duration: 500s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction:alternate;
+        
+        -moz-animation-name: move,fade;
+        -moz-animation-duration: 500s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-direction:alternate;
+        
+
+}
+
+html {
+
+        -webkit-animation-name: fade3;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: finite;
+        -webkit-animation-direction:alternate;
+        
+        -moz-animation-name: fade3;
+        -moz-animation-duration: 1s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: finite;
+        -moz-animation-direction:alternate;
+        
+
+}
+
+@-moz-keyframes fade3{
+		    0% { opacity: 0; }
+		    100% {opacity:1;}
+		    
+}
+@-webkit-keyframes fade3{
+		    0% { opacity: 0; }
+		    100% {opacity:1;}
+		    
+}
+
+
+
+@-webkit-keyframes move {
+	
+0%   {background-position: 100% 0%}
+10.5% {background-position:100% 0%}
+11.5% {background-position: 85% 0%}
+20.5% {background-position: 85% 0%}
+21.5%{background-position: 65% 0%}
+30.5% {background-position: 65% 0%}
+31.5% {background-position: 30% 0%}
+40.5% {background-position: 30% 0%}
+41.5% {background-position: 15% 0%}
+/*50%  {background-position: 0% 0%} */
+50.5% {background-position: 15% 0%}
+51.5% {background-position: 0% 0%}
+60.5% {background-position: 0% 0%}
+61.5% {background-position: 40% 0%}
+70.5% {background-position: 40% 0%}
+71.5% {background-position: 60% 0%}
+80.5% {background-position: 60% 0%}
+81.5% {background-position: 77% 0%}
+90.5% {background-position: 77% 0%}
+91.5% {background-position: 100% 0%}
+99.5% {background-position: 100% 0%}
+100% {background-position: 100% 0%}
+}
+
+@-moz-keyframes move {
+	
+0%   {background-position: 100% 0%}
+10.5% {background-position:100% 0%}
+11.5% {background-position: 85% 0%}
+20.5% {background-position: 85% 0%}
+21.5%{background-position: 65% 0%}
+30.5% {background-position: 65% 0%}
+31.5% {background-position: 30% 0%}
+40.5% {background-position: 30% 0%}
+41.5% {background-position: 15% 0%}
+/*50%  {background-position: 0% 0%} */
+50.5% {background-position: 15% 0%}
+51.5% {background-position: 0% 0%}
+60.5% {background-position: 0% 0%}
+61.5% {background-position: 40% 0%}
+70.5% {background-position: 40% 0%}
+71.5% {background-position: 60% 0%}
+80.5% {background-position: 60% 0%}
+81.5% {background-position: 77% 0%}
+90.5% {background-position: 77% 0%}
+91.5% {background-position: 100% 0%}
+99.5% {background-position: 100% 0%}
+100% {background-position: 100% 0%}
+}
+
+
+@-webkit-keyframes fade{
+		    0% { opacity: 1; }
+		    0.5% {opacity:1;}
+		    1% {opacity: 1;}
+		    10% { opacity: 1; }
+		    10.5% {opacity: 0.2; }
+		    11.5% {opacity:0.2;}
+		    12% {opacity:1;}
+		    20% {opacity:1;}
+		    20.5% {opacity:0.9;}
+		    21.5% {opacity:0.9;}
+		    22% {opacity:1;}
+		    30% {opacity:1;}
+		    30.5% {opacity:0.2;}
+		    31.5% {opacity:0.2;}
+		    32% {opacity:1;}
+		    40% {opacity:1;}
+		    40.5% {opacity:0.6;}
+		    41.5% {opacity:0.6;}
+		    42% {opacity:1;}
+		    50% {opacity:1;}
+		    50.5% {opacity:0.8;}
+		    51.5% {opacity:0.8;}
+		    52% {opacity:1;}
+		    60% {opacity:1;}
+		    60.5% {opacity:0.3;}
+		    61.5% {opacity:0.3;}
+		    62% {opacity:1;}
+		    70% {opacity:1;}
+		    70.5% {opacity:0.7;}
+		    71.5% {opacity:0.7;}
+		    72% {opacity:1;}
+		    80% {opacity:1;}
+		    80.5% {opacity:0.5;}
+		    81.5% {opacity:0.5;}
+		    82% {opacity:1;}
+		    90% {opacity:1;}
+		    90.5% {opacity:0.1;}
+		    91.5% {opacity:0.1;}
+		    92% {opacity:1;}	   		    		    		    		    
+		    99.5% {opacity:1;}
+		    100% {opacity:1;}
+		    
+}
+
+@-moz-keyframes fade{
+		    0% { opacity: 1; }
+		    0.5% {opacity:1;}
+		    1% {opacity: 1;}
+		    10% { opacity: 1; }
+		    10.5% {opacity: 0.6; }
+		    11.5% {opacity:0.6;}
+		    12% {opacity:1;}
+		    20% {opacity:1;}
+		    20.5% {opacity:0.8;}
+		    21.5% {opacity:0.8;}
+		    22% {opacity:1;}
+		    30% {opacity:1;}
+		    30.5% {opacity:0.2;}
+		    31.5% {opacity:0.2;}
+		    32% {opacity:1;}
+		    40% {opacity:1;}
+		    40.5% {opacity:0.5;}
+		    41.5% {opacity:0.5;}
+		    42% {opacity:1;}
+		    50% {opacity:1;}
+		    50.5% {opacity:0.7;}
+		    51.5% {opacity:0.7;}
+		    52% {opacity:1;}
+		    60% {opacity:1;}
+		    60.5% {opacity:0.2;}
+		    61.5% {opacity:0.2;}
+		    62% {opacity:1;}
+		    70% {opacity:1;}
+		    70.5% {opacity:0.3;}
+		    71.5% {opacity:0.3;}
+		    72% {opacity:1;}
+		    80% {opacity:1;}
+		    80.5% {opacity:0.4;}
+		    81.5% {opacity:0.4;}
+		    82% {opacity:1;}
+		    90% {opacity:1;}
+		    90.5% {opacity:0.1;}
+		    91.5% {opacity:0.1;}
+		    92% {opacity:1;}	   		    		    		    		    
+		    99.5% {opacity:1;}
+		    100% {opacity:1;}
+		    
+}
+@-moz-keyframes fade2{
+		    0% { opacity: 0; }
+		    0.5% {opacity:0.3;}
+		    1% {opacity: 0.3;}
+		    10% { opacity: 0.3; }
+		    10.5% {opacity: 1; }
+		    11.5% {opacity:1;}
+		    12% {opacity:0.4;}
+		    20% {opacity:0.4;}
+		    20.5% {opacity:1;}
+		    21.5% {opacity:1;}
+		    22% {opacity:0.5;}
+		    30% {opacity:0.5;}
+		    30.5% {opacity:1;}
+		    31.5% {opacity:1;}
+		    32% {opacity:0.2;}
+		    40% {opacity:0.2;}
+		    40.5% {opacity:1;}
+		    41.5% {opacity:1;}
+		    42% {opacity:0.3;}
+		    50% {opacity:0.3;}
+		    50.5% {opacity:1;}
+		    51.5% {opacity:1;}
+		    52% {opacity:0.4;}
+		    60% {opacity:0.4;}
+		    60.5% {opacity:1;}
+		    61.5% {opacity:1;}
+		    62% {opacity:0.5;}
+		    70% {opacity:0.5;}
+		    70.5% {opacity:1;}
+		    71.5% {opacity:1;}
+		    72% {opacity:0.6;}
+		    80% {opacity:0.6;}
+		    80.5% {opacity:1;}
+		    81.5% {opacity:1;}
+		    82% {opacity:0.7;}
+		    90% {opacity:0.7;}
+		    90.5% {opacity:1;}
+		    91.5% {opacity:1;}
+		    92% {opacity:0.8;}	   		    		    		    		    
+		    99.5% {opacity:0.8;}
+		    100% {opacity:0;}
+		    
+}
+
+		    
+
+
+
+#background2 {
+        background: url(background2.jpg) no-repeat center center;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+}
+
+
+
+#background3 {
+        background: url(background3.jpg) no-repeat center center;
+	top: 0; left: 0; right: 0; bottom: 0;
+        position: fixed;
+        z-index: -1;
+        
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+
+}
+
+
+
+
+/*Pätee kaikkeen bodyssä*/
+body {
+background-color: black; /*taustavärin määritys */
+}
+
+
+
+/*Musta boksi keskelle sivua*/
+#keskitys { 
+	z-index: 400; 
+	position: relative; 
+	width: 640px; 
+	margin-left:auto;
+	margin-right: auto;
+	padding: 40px; 
+	background: black; 
+	-moz-box-shadow: 0 0 30px black; 
+	-webkit-box-shadow: 0 0 30px black; 
+	box-shadow: 0 0 30px black;
+	color:white;
+	opacity:1;
+	-moz-transition: all 5s ease-out;
+	-webkit-transition: all 5s ease-out;
+
+ }
+#keskitys:hover {
+
+	
+	opacity:1;
+}
+
+
+
+/* Kaikkein alinna sivulla*/
+#alareuna {
+	
+	font-size:12px;
+	
+}
+
+
+/*Kaikkien listan alkioiden ominaisuuksia */
+li {
+	margin: 5px 0 0 0;
+	display: inline;
+}
+
+/*Kaikkien linkkien ominaisuuksia*/
+a {
+text-decoration:none;
+font-size: 20px;
+-moz-transition: all 5s ease-out;
+-webkit-transition: all 5s ease-out;
+}
+
+
+/*Otsikoiden ominaisuuksia*/
+h2, h3, h1 {
+	color:#CFC;
+
+}
+
+
+/* MÄÄRITELLÄÄN NAVIGOINTI, sen sijainti*/
+#navigointi {
+	position:relative;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+/* navigoinnin yleisiä ominaisuuksia */
+#navigointi ul {
+	
+	list-style: none; /*pallukat piiloon*/
+	padding: 3px;
+	position:relative;
+	/*border: 1px solid white;
+*/
+
+}
+
+
+
+/*navigoinnin listan linkkien ominaisuuksia*/
+#navigointi li a{ 
+	display: inline; /*vaakasuuntainen navigointi*/	
+	padding-left:50px;
+	padding-right:50px;
+	background-color:#CFC;
+	color: #174867;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	-moz-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+	margin-left:20px;
+	font-size:18px;
+
+}
+
+
+
+/*tilanne kun hiiri on linkin päällä, navigoinnin listan linkkien ominaisuuksia. */
+#navigointi li a:hover {
+	background-color:#C0FFFF ;
+	color: black;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+	
+	
+
+}
+
+
+#sisallysluettelo li {
+	display:block;/*inline vaakasuora ja block pystysuora*/
+}
+#sisallysluettelo a{
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	padding:1px;
+
+}
+
+
+#sisallysluettelo a:hover{
+
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+
+table {
+	font-size:24px;
+}
+
+
+
+tr {
+	font-size:30px;
+	padding:10px;
+	z-index:500;
+}
+
+td {
+	background-color:#666666;
+	border: 1px solid black;
+	padding-left:25px;
+	padding-right:25px;
+	width:40px;
+	z-index:500;
+}
+
+img {
+border-style:none;
+}
+
+ 
