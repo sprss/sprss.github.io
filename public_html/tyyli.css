@@ -353,7 +353,7 @@ h2, h3, h1 {
 /* MÄÄRITELLÄÄN NAVIGOINTI, sen sijainti*/
 #navigointi {
 	position:relative;
-	width:600px;
+	width:1000px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:10px;
