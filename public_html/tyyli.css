@@ -357,6 +357,7 @@ h2, h3, h1 {
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:10px;
+	padding-left: 15%;
 }
 
 /* navigoinnin yleisiä ominaisuuksia */
@@ -365,6 +366,9 @@ h2, h3, h1 {
 	list-style: none; /*pallukat piiloon*/
 	padding: 3px;
 	position:relative;
+
+
+
 	/*border: 1px solid white;
 */
 
