@@ -139,8 +139,23 @@
    	 <iframe src="https://store.steampowered.com/widget/814990/" frameborder="0" width="646" height="190"></iframe>
 	 
 	 
-	 <p>You can donate if you are a true fan and want to support the game development of future games: <a target="_blank" href=" https://www.paypal.com/donate/?hosted_button_id=DVH6VLVXD9A2L"> Donate </a></p>
-	 
+	 <p>You can donate if you are a true fan and want to support the game development of future games:</p>
+	 <div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'M2F66N3L72YYS',
+image: {
+src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
+alt:'Donate with PayPal button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+</div>
+
 	
 	 
 	 
