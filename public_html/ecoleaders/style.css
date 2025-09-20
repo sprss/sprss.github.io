@@ -105,3 +105,16 @@ footer {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.news article {
+  margin-bottom: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.news h3 {
+  color: #205c2c;
+  margin-top: 0;
+}
