@@ -118,3 +118,26 @@ footer {
   color: #205c2c;
   margin-top: 0;
 }
+
+/* Instagram Button Style */
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden; /* ensures the icon stays within circle */
+}
+
+.instagram-btn img {
+  width: 24px; /* adjust size to fit nicely */
+  height: 24px;
+}
+
+.instagram-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
