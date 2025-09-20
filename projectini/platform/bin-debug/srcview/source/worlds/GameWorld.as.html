@@ -1,0 +1,124 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>GameWorld.as</title>
+<link rel="stylesheet" type="text/css" href="../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">worlds</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">entities</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Ball</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">entities</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Bullets</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">entities</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Player</span>;
+    
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Entity</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">FP</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">World</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">graphics</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Text</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Input</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">utils</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Key</span>;
+
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Sfx</span>;
+    
+    
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">GameWorld</span> <span class="ActionScriptReserved">extends</span> <span class="ActionScriptDefault_Text">World</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">playerEntity</span>:<span class="ActionScriptDefault_Text">Player</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">textEntity</span>:<span class="ActionScriptDefault_Text">Text</span>;
+    
+    
+        
+        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">GameWorld</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            
+            
+            <span class="ActionScriptReserved">super</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+        <span class="ActionScriptBracket/Brace">}</span>
+        
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">override</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">begin</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            
+            
+            
+            <span class="ActionScriptDefault_Text">playerEntity</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Player</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">playerEntity</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptComment">//textEntity = new Text("Blbalbalbalbablal");
+</span>            
+            
+                <span class="ActionScriptComment">// step 1 tell flashPunk what size you want the text
+</span>                <span class="ActionScriptDefault_Text">Text</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">size</span> <span class="ActionScriptOperator">=</span> 15;
+                
+                <span class="ActionScriptComment">// step 2 create a Text object
+</span>                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myText</span>:<span class="ActionScriptDefault_Text">Text</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Text</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptString">"Welcome to Rogwar. "</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myText2</span>:<span class="ActionScriptDefault_Text">Text</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Text</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptString">"Use arrow keys and WASD for movement."</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myText3</span>:<span class="ActionScriptDefault_Text">Text</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Text</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptString">"M enable/mute music. Make yourself slim and athletic."</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myText4</span>:<span class="ActionScriptDefault_Text">Text</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Text</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptString">"Then you can catch the red pill and move on!"</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                <span class="ActionScriptComment">// step 3 create an Entity to easily display the text
+</span>                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myTextEntity</span>:<span class="ActionScriptDefault_Text">Entity</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Entity</span><span class="ActionScriptBracket/Brace">(</span>0<span class="ActionScriptOperator">,</span>0<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">myText</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myTextEntity2</span>:<span class="ActionScriptDefault_Text">Entity</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Entity</span><span class="ActionScriptBracket/Brace">(</span>0<span class="ActionScriptOperator">,</span>0<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">myText2</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myTextEntity3</span>:<span class="ActionScriptDefault_Text">Entity</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Entity</span><span class="ActionScriptBracket/Brace">(</span>0<span class="ActionScriptOperator">,</span>0<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">myText3</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myTextEntity4</span>:<span class="ActionScriptDefault_Text">Entity</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Entity</span><span class="ActionScriptBracket/Brace">(</span>0<span class="ActionScriptOperator">,</span>0<span class="ActionScriptOperator">,</span><span class="ActionScriptDefault_Text">myText4</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptComment">// optional step 3b - position the text somewhere else - here I center it on the screen.
+</span>                <span class="ActionScriptDefault_Text">myTextEntity</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">width</span> <span class="ActionScriptOperator">/</span> 2<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myText</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">width</span> <span class="ActionScriptOperator">/</span> 2<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">-</span>100;
+                <span class="ActionScriptDefault_Text">myTextEntity</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">height</span> <span class="ActionScriptOperator">/</span> 2<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myText</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">height</span> <span class="ActionScriptOperator">/</span> 2<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">-</span> 100;
+                
+                <span class="ActionScriptDefault_Text">myTextEntity2</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span>;
+                <span class="ActionScriptDefault_Text">myTextEntity2</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">+</span>20;    
+                
+                <span class="ActionScriptDefault_Text">myTextEntity3</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity2</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span>;
+                <span class="ActionScriptDefault_Text">myTextEntity3</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity2</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">+</span>20;    
+                
+                <span class="ActionScriptDefault_Text">myTextEntity4</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity3</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">x</span>;
+                <span class="ActionScriptDefault_Text">myTextEntity4</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">myTextEntity3</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">+</span>20;    
+                <span class="ActionScriptComment">// step 4 add the entity to the world
+</span>                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myTextEntity</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myTextEntity2</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myTextEntity3</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myTextEntity4</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myBulletEntity</span>:<span class="ActionScriptDefault_Text">Bullets</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Bullets</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myBulletEntity</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myBallEntity</span>:<span class="ActionScriptDefault_Text">Ball</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Ball</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myBallEntity</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">myBallEntity2</span>:<span class="ActionScriptDefault_Text">Ball</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Ball</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">add</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">myBallEntity2</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                
+                
+                
+                <span class="ActionScriptComment">//FP.world.recycle(myBulletEntity);
+</span>                
+                
+                <span class="ActionScriptReserved">super</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">begin</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        <span class="ActionScriptBracket/Brace">}</span>
+        
+        
+
+        
+    
+        
+
+        
+        
+        
+    <span class="ActionScriptBracket/Brace">}</span>
+<span class="ActionScriptBracket/Brace">}</span></pre></body>
+</html>

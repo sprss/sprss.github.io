@@ -1,0 +1,88 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html lang="en"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<title>Welcome</title> 
+		<style type="text/css" media="screen"> 
+		body{
+			font-family: Helvetica, Verdana, sans-serif;
+		}
+		#welcome {
+			margin: 1em auto;
+			width: 100%;
+			height: 1000px;
+			overflow: hidden;
+			background: #000;
+			background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+			color: rgba(0, 255, 0, .7);
+			text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+			position: relative;	
+			
+			
+			
+		}
+		@-webkit-keyframes fade{
+		    0%   { opacity: 1; }
+		    100% { opacity: 0; }
+		}
+		@-webkit-keyframes fall{
+		   	from {top: -250px;}
+			to 	{top: 1200px;}
+		}
+ 
+ 
+		#welcome div{
+			position: absolute;	
+			top: 0;
+			-webkit-transform-origin: 0%;
+			
+			-webkit-animation-name: fall, fade;			
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: normal;
+			-webkit-animation-timing-function: ease-out;
+		}
+		#welcome span{
+			color: rgb(0, 255, 0);
+			text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+		}
+		.f1{
+			font-size: 4.0em;
+		}
+		.f2{
+			font-size: 2.0em;
+		}
+		.c1{
+			color: rgba(0, 255, 0, .5);
+		}
+		.d1{
+			-webkit-animation-duration: 8s;
+		}
+		.d2{
+			-webkit-animation-duration: 12s;
+		}
+		.d3{
+			-webkit-animation-duration: 16s;
+		}
+		.d4{
+			-webkit-animation-duration: 20s;
+		}
+		.de{	
+			-webkit-animation-delay: 3s;
+		}
+		
+		</style> 
+	</head> 
+	<body style="background:black;opacity:0.5;"> 
+		<a href="paasivu.html" style="text-decoration: none;">
+		<div href="paasivu.html" id="welcome">	
+			<div class="d1 c1 de f1" style="left:10%;">Welcome to the Page</div> 
+			<div class="d3 f1" style="left:25%;">Welcome to the Page</div> 
+			<div class="d1 f2 c1" style="left:50%;">Welcome to the Page</div> 
+			<div class="d2 f2" style="left:60%;">Welcome to the Page</div> 
+			<div class="d4 c3 de f1" style="left:70%;">Welcome to the Page</div> 
+ 
+		</div> 
+		</a>
+	</body> 
+</html> 

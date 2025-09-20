@@ -1,0 +1,131 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Ball.as</title>
+<link rel="stylesheet" type="text/css" href="../../SourceStyles.css"/>
+</head>
+
+<body><pre><span class="ActionScriptpackage">package</span> <span class="ActionScriptDefault_Text">entities</span>
+<span class="ActionScriptBracket/Brace">{</span>
+    
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">flash</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">display</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">BitmapData</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Entity</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Graphic</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Mask</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">graphics</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Image</span>;
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">net</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">flashpunk</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">FP</span>;
+    
+    
+    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">Ball</span> <span class="ActionScriptReserved">extends</span> <span class="ActionScriptDefault_Text">Entity</span>
+    <span class="ActionScriptBracket/Brace">{</span>
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">randomMaxNumbers</span>:<span class="ActionScriptDefault_Text">int</span> <span class="ActionScriptOperator">=</span> 5;
+        <span class="ActionScriptReserved">private</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>:<span class="ActionScriptDefault_Text">int</span> <span class="ActionScriptOperator">=</span> -3;
+        <span class="ActionScriptReserved">protected</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">randomNumber</span>:<span class="ActionScriptDefault_Text">int</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;    
+        <span class="ActionScriptReserved">protected</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">randomNumber2</span>:<span class="ActionScriptDefault_Text">int</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;
+        <span class="ActionScriptReserved">protected</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">ballImage</span>:<span class="ActionScriptDefault_Text">Image</span>;
+        <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">Ball</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>
+        <span class="ActionScriptBracket/Brace">{</span>
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                <span class="ActionScriptDefault_Text">ballImage</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Image</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">BitmapData</span><span class="ActionScriptBracket/Brace">(</span>20<span class="ActionScriptOperator">,</span> 20<span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">ballImage</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">color</span> <span class="ActionScriptOperator">=</span> 0xa43456;
+                <span class="ActionScriptDefault_Text">graphic</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">ballImage</span>;
+                
+                <span class="ActionScriptDefault_Text">setHitbox</span><span class="ActionScriptBracket/Brace">(</span>20<span class="ActionScriptOperator">,</span> 20<span class="ActionScriptBracket/Brace">)</span>;
+                <span class="ActionScriptDefault_Text">width</span> <span class="ActionScriptOperator">=</span> 20;
+                <span class="ActionScriptDefault_Text">height</span> <span class="ActionScriptOperator">=</span> 20;
+                <span class="ActionScriptDefault_Text">type</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptString">"ball"</span>;
+                
+                
+                <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">width</span><span class="ActionScriptOperator">/</span>1.5 <span class="ActionScriptOperator">*</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+                
+                
+                <span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">screen</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">height</span><span class="ActionScriptOperator">/</span>1.5 <span class="ActionScriptOperator">*</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptBracket/Brace">}</span>
+            
+            
+            <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">destroy</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                <span class="ActionScriptComment">// Here we could place specific destroy-behavior for the Bullet.
+</span>                <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">world</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">remove</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptReserved">this</span><span class="ActionScriptBracket/Brace">)</span>;
+            <span class="ActionScriptBracket/Brace">}</span>
+            
+            <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">override</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">update</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptReserved">void</span>
+            <span class="ActionScriptBracket/Brace">{</span>
+                
+            
+                
+                
+            
+                <span class="ActionScriptComment">//Math.floor(Math.random() * 41) + 10;  //number between 10 -50
+</span>    
+                
+                <span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">+</span>  <span class="ActionScriptDefault_Text">randomNumber</span>;
+                
+                <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomNumber2</span>;
+                
+                
+                
+                <span class="ActionScriptComment">//if () {
+</span>                    
+            <span class="ActionScriptComment">//    }
+</span>                
+                <span class="ActionScriptComment">//Here is the positions of the balls, working pretty nice this way. Not going too much outside the screen and bouncing unpredictable.
+</span>                <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">&lt;=</span>0<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                    <span class="ActionScriptDefault_Text">y</span><span class="ActionScriptOperator">=</span> 0;
+                    <span class="ActionScriptDefault_Text">randomNumber</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;
+                    
+                <span class="ActionScriptBracket/Brace">}</span>
+                
+                <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">&gt;=</span> <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">height</span> <span class="ActionScriptOperator">/</span> 1.5<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                    <span class="ActionScriptComment">//y = FP.stage.height / 1.5;
+</span>                    <span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptOperator">-</span><span class="ActionScriptDefault_Text">y</span>;
+                    <span class="ActionScriptDefault_Text">randomNumber2</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;
+                    <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">==</span> <span class="ActionScriptDefault_Text">y</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                        <span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">x</span><span class="ActionScriptOperator">+</span>1;
+                    <span class="ActionScriptBracket/Brace">}</span>
+                <span class="ActionScriptBracket/Brace">}</span>
+                
+                <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">&lt;=</span> 0<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                    
+                    <span class="ActionScriptDefault_Text">y</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">y</span><span class="ActionScriptOperator">+</span>2;
+                    
+                <span class="ActionScriptComment">//    if (y&gt;x) {
+</span>                <span class="ActionScriptComment">//        x=y+2;    
+</span>                <span class="ActionScriptComment">//    }
+</span>                    <span class="ActionScriptDefault_Text">randomNumber</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;
+                <span class="ActionScriptComment">///    if (x == y) {
+</span>                <span class="ActionScriptComment">//        x = y+1;
+</span>                <span class="ActionScriptComment">//    }
+</span>                <span class="ActionScriptBracket/Brace">}</span>
+                
+                <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span> <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">&gt;=</span> <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">width</span> <span class="ActionScriptOperator">/</span>1.5<span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                    <span class="ActionScriptComment">//x = 0;
+</span>                    <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">FP</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">width</span> <span class="ActionScriptOperator">/</span> 1.5;
+                    <span class="ActionScriptDefault_Text">randomNumber2</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">floor</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">Math</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">random</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptOperator">*</span> <span class="ActionScriptBracket/Brace">(</span>1<span class="ActionScriptOperator">+</span><span class="ActionScriptDefault_Text">randomMaxNumbers</span> <span class="ActionScriptOperator">-</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptBracket/Brace">)</span><span class="ActionScriptOperator">+</span> <span class="ActionScriptDefault_Text">randomMinNumbers</span>;
+                    <span class="ActionScriptReserved">if</span> <span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">==</span> <span class="ActionScriptDefault_Text">y</span><span class="ActionScriptBracket/Brace">)</span> <span class="ActionScriptBracket/Brace">{</span>
+                        <span class="ActionScriptDefault_Text">x</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">y</span><span class="ActionScriptOperator">+</span>1;
+                    <span class="ActionScriptBracket/Brace">}</span>
+                <span class="ActionScriptBracket/Brace">}</span>
+                
+
+                
+                <span class="ActionScriptComment">// end HelloWorld.update
+</span>            <span class="ActionScriptBracket/Brace">}</span>
+            
+            
+            
+        
+        <span class="ActionScriptBracket/Brace">}</span>
+    <span class="ActionScriptBracket/Brace">}</span>
+</pre></body>
+</html>
