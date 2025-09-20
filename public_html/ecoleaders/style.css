@@ -19,6 +19,14 @@ header {
   max-width: 120px;
 }
 
+.logo-large {
+  max-width: 500px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
 h1 {
   margin: 10px 0;
   color: #205c2c;
