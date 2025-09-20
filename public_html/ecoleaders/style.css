@@ -82,8 +82,26 @@ article {
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background: #d9f8c4;
   color: #205c2c;
   margin-top: 30px;
+}
+
+.eu-funding {
+  margin-bottom: 20px;
+}
+
+.eu-logo {
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.funding-text {
+  font-size: 0.9rem;
+  color: #2c3e2d;
+  max-width: 800px;
+  margin: 0 auto;
 }
