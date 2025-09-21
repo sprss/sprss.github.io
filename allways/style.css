@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #0a1c40;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0a1c40;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* Content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #0a1c40;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 5px;
+}
+
+/* Members */
+.members {
+  margin-top: 40px;
+}
+
+.member {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #f8f9ff;
+  border-left: 5px solid #3b82f6;
+  border-radius: 5px;
+}
+
+.member h3 {
+  margin-top: 0;
+  color: #0a1c40;
+}
+
+/* Contact */
+.contact {
+  margin-top: 40px;
+  padding: 20px;
+  background: #eef3ff;
+  border-radius: 5px;
+}
+
+.contact a {
+  color: #0a1c40;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #0a1c40;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.language-switch button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 4px 8px;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.language-switch button:hover {
+  color: #3b82f6;
+}
+
+.language-switch button.active {
+  border-bottom: 2px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
