@@ -46,7 +46,7 @@ const translations = {
     "members-title": "Perustajajäsenten esittely",
     "member1-name": "Asko Kiiskinen",
     "member1-text1": "Olen 64-vuotias mies, joka asuu Vantaalla lähellä Helsinki-Vantaan lentoasemaa. Olen Eronnut ja minulla on 2 aikuista lasta. Perustin järjestön sen jälkeen kun työskentelin monta vuotta vähäosaisten hyväksi.",
-    "member1-text2": "Olen nyt eläkkeellä, pyöritin aiemmin 40 vuotta oman energia-alan yritystä. Minulla oli helikopteri firma ja helikopterin lentolupakirja. Työskentelene edelleen Allways Exodus ry:lle keräämällä, antamalla ja kuljettamalla lahjoitusapua. ",
+    "member1-text2": "Olen nyt eläkkeellä, pyöritin aiemmin 40 vuotta energia-alan yritystä. Minulla oli helikopteri firma ja helikopterin lentolupakirja. Työskentelene edelleen Allways Exodus ry:lle keräämällä, antamalla ja kuljettamalla lahjoitusapua. ",
     "member2-name": "Janne Jouttela",
     "member2-text1": "Olen 58-vuotias mies, joka asuu Etelä-Suomessa Lopen kunnassa. Olen naimisissa ja elän vaimoni sekä aikuisten lasteni kanssa maatilalla. Olen kristitty, hetero, rehellinen, vastuullinen ja lojaali kierolla huumorilla höystettynä. En tykkää valehtelusta ja epäreilusta kohtelusta.",
     "member2-text2": "Minulla on monia ammatteja, mutta olen pääasiassa työskennellyt lennonjohtajana. Nykyisin työskentelen ilmailun parissa spesialistina. Minulla on euroopan ja yhdysvaltojen pilotti lisenssi. Tuen täysin kaikkia Allways Exodus ry:n tavoitteita ja jatkan yhdistykselle työskentelyä.",
