@@ -20,10 +20,7 @@ const translations = {
     "member1-name": "Asko Kiiskinen",
     "member1-text1": "I'm a 64-year-old man living in Vantaa near Helsinki airport. I'm divorced and have two adult child. I formed the Allways Exodus ry after many years of working with underpriviledged people.",
     "member1-text2": "I'm now retired after running my own small energy technology related company for over 40 years. I also used to have a helicopter flying service company and pilot's license. I'm still more than willing to continue supporting Allways Exodus ry goals by working personally in collecting, giving and transporting goods.",
-    "member2-name": "Janne Jouttela",
-    "member2-text1": "I am a 58-year-old male living in southern Finland in Loppi county. I'm married and live with my wife and grown up kids in a farm. I'm a christian man, straight, honest, responsible and loyal with a little twist of humour. I dislike lying and unfair treating.",
-    "member2-text2": "I have many professions, but mainly worked in air traffic control, and nowadays in airspace management section as specialist. I also have european and US pilot licenses. I fully support all the goals of Allways Exodus ry, and continue to work for it.",
-    "contact-title": "Contact Us",
+      "contact-title": "Contact Us",
     "contact-text": "The best way to reach us is by email: "
   },
   fi: {
@@ -47,9 +44,6 @@ const translations = {
     "member1-name": "Asko Kiiskinen",
     "member1-text1": "Olen 64-vuotias mies, joka asuu Vantaalla lähellä Helsinki-Vantaan lentoasemaa. Olen Eronnut ja minulla on 2 aikuista lasta. Perustin järjestön sen jälkeen kun työskentelin monta vuotta vähäosaisten hyväksi.",
     "member1-text2": "Olen nyt eläkkeellä, pyöritin aiemmin 40 vuotta energia-alan yritystä. Minulla oli helikopteri firma ja helikopterin lentolupakirja. Työskentelen edelleen Allways Exodus ry:lle keräämällä, antamalla ja kuljettamalla lahjoitusapua. ",
-    "member2-name": "Janne Jouttela",
-    "member2-text1": "Olen 58-vuotias mies, joka asuu Etelä-Suomessa Lopen kunnassa. Olen naimisissa ja elän vaimoni sekä aikuisten lasteni kanssa maatilalla. Olen kristitty, hetero, rehellinen, vastuullinen ja lojaali kierolla huumorilla höystettynä. En tykkää valehtelusta ja epäreilusta kohtelusta.",
-    "member2-text2": "Minulla on monia ammatteja, mutta olen pääasiassa työskennellyt lennonjohtajana. Nykyisin työskentelen ilmailun parissa spesialistina. Minulla on euroopan ja yhdysvaltojen pilotti lisenssi. Tuen täysin kaikkia Allways Exodus ry:n tavoitteita ja jatkan yhdistykselle työskentelyä.",
     "contact-title": "Yhteystiedot",
     "contact-text": "Paras tapa tavoittaa meidät on sähköpostitse: "
   }
