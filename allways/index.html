@@ -77,10 +77,19 @@
 
     <section id="contact" class="contact">
       <h2 id="contact-title">Contact Us</h2>
-      <p id="contact-text">
-        The best way to reach us is by email:  
-        <a href="mailto:asko.kiiskinen@kolumbus.fi">asko.kiiskinen@kolumbus.fi</a>
-      </p>
+<p id="contact-text">
+  You can contact us via email: 
+  <span id="email"></span>
+</p>
+
+<script>
+  const user = "asko.kiiskinen";
+  const domain = "kolumbus.fi";
+  const email = user + "@" + domain;
+
+  const emailSpan = document.getElementById("email");
+  emailSpan.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+</script>
     </section>
   </main>
 
