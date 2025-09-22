@@ -18,7 +18,7 @@ const translations = {
     "act-6": "Support to Ukraine has started late 2016, where we have transported basic supplies, donated vehicles, and given financial support",
     "members-title": "Introduction of Forming Members",
     "member1-name": "Asko Kiiskinen",
-    "member1-text1": "I'm a 64-year-old man living in Vantaa near Helsinki airport. I'm divorced and have to adult child. I formed the Allways Exodus ry after many years of working with underpriviledged people.",
+    "member1-text1": "I'm a 64-year-old man living in Vantaa near Helsinki airport. I'm divorced and have two adult child. I formed the Allways Exodus ry after many years of working with underpriviledged people.",
     "member1-text2": "I'm now retired after running my own small energy technology related company for over 40 years. I also used to have a helicopter flying service company and pilot's license. I'm still more than willing to continue supporting Allways Exodus ry goals by working personally in collecting, giving and transporting goods.",
     "member2-name": "Janne Jouttela",
     "member2-text1": "I am a 58-year-old male living in southern Finland in Loppi county. I'm married and live with my wife and grown up kids in a farm. I'm a christian man, straight, honest, responsible and loyal with a little twist of humour. I dislike lying and unfair treating.",
