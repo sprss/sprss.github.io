@@ -2,6 +2,47 @@
 /* CSS Document */
 
 
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*tämä css3 koodi täällä heittää herjaa css-validatorissa (joka testaa css  2.1stä), joten
 ei saa välittää siitä herjasta siis. Kaikki sivuston ominaisuudet toimii uusimmissa firefox ja chrome selaimissa.*/
